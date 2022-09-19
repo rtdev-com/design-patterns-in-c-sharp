@@ -9,6 +9,16 @@
         public FlyBehavior FlyBehavior { get; set; }
         public QuackBehavior QuackBehavior { get; set; }
 
+        public void setFlyBehavior(FlyBehavior fb)
+        {
+            FlyBehavior = fb;
+        }
+
+        public void setQuackBehavior(QuackBehavior qb)
+        {
+            QuackBehavior = qb;
+        }
+
         public abstract void display();
         public void performFly()
         {
@@ -45,6 +55,22 @@
         }
     }
 
+    public class ModelDuck : Duck
+    {
+        public ModelDuck()
+        {
+            /* Inherits the quackBehavior and flyBehavior
+            instance variables from class Duck */
+            QuackBehavior = new Quack();
+            FlyBehavior = new FlyNoWay();
+        }
+
+        override public void display()
+        {
+            Console.WriteLine("I'm a model duck");
+        }
+    }
+
     /**** STEP 2 ****/
     public interface FlyBehavior
     {
@@ -68,6 +94,15 @@
             // For ducks that do NOT fly...
             Console.WriteLine("I can't fly");
         }
+    }
+
+    public class FlyRocketPowered : FlyBehavior
+    {
+        public void fly()
+        {
+            // For ducks that do NOT fly...
+            Console.WriteLine("I'm flying with a rocket!");
+        }        
     }
 
     /**** STEP 3 ****/
@@ -108,6 +143,12 @@
             Duck mallard = new MallardDuck();
             mallard.performQuack();
             mallard.performFly();
+
+            Duck model = new ModelDuck();
+            model.performFly();
+            model.setFlyBehavior(new FlyRocketPowered());
+            model.performFly();
+
         }
     }
 }
