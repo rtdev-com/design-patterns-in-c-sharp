@@ -9,30 +9,30 @@
         public FlyBehavior FlyBehavior { get; set; }
         public QuackBehavior QuackBehavior { get; set; }
 
-        public void setFlyBehavior(FlyBehavior fb)
+        public void SetFlyBehavior(FlyBehavior fb)
         {
             FlyBehavior = fb;
         }
 
-        public void setQuackBehavior(QuackBehavior qb)
+        public void SetQuackBehavior(QuackBehavior qb)
         {
             QuackBehavior = qb;
         }
 
-        public abstract void display();
-        public void performFly()
+        public abstract void Display();
+        public void PerformFly()
         {
             // Delegates to behavior class
-            FlyBehavior.fly();
+            FlyBehavior.Fly();
         }
 
-        public void performQuack()
+        public void PerformQuack()
         {
             // Delegates to behavior class
-            QuackBehavior.quack();
+            QuackBehavior.Quack();
         }
         
-        public void swim()
+        public void Swim()
         {
             Console.WriteLine("All ducks float, even decoys!");
         }
@@ -45,11 +45,11 @@
         {
             /* Inherits the quackBehavior and flyBehavior
             instance variables from class Duck */
-            QuackBehavior = new Quack();
+            QuackBehavior = new DefaultQuack();
             FlyBehavior = new FlyWithWings();
         }
 
-        override public void display()
+        override public void Display()
         {
             Console.WriteLine("I'm a real Mallard duck");
         }
@@ -61,11 +61,11 @@
         {
             /* Inherits the quackBehavior and flyBehavior
             instance variables from class Duck */
-            QuackBehavior = new Quack();
+            QuackBehavior = new DefaultQuack();
             FlyBehavior = new FlyNoWay();
         }
 
-        override public void display()
+        override public void Display()
         {
             Console.WriteLine("I'm a model duck");
         }
@@ -75,12 +75,12 @@
     public interface FlyBehavior
     {
         // Interface that all flying behavior classes implement
-        public void fly();
+        public void Fly();
     }
 
     public class FlyWithWings : FlyBehavior
     {
-        public void fly()
+        public void Fly()
         {
             // For ducks that fly...
             Console.WriteLine("I'm flying!!");
@@ -89,7 +89,7 @@
 
     public class FlyNoWay : FlyBehavior
     {
-        public void fly()
+        public void Fly()
         {
             // For ducks that do NOT fly...
             Console.WriteLine("I can't fly");
@@ -98,7 +98,7 @@
 
     public class FlyRocketPowered : FlyBehavior
     {
-        public void fly()
+        public void Fly()
         {
             // For ducks that do NOT fly...
             Console.WriteLine("I'm flying with a rocket!");
@@ -108,12 +108,12 @@
     /**** STEP 3 ****/
     public interface QuackBehavior
     {
-        public void quack();
+        public void Quack();
     }
 
-    public class Quack : QuackBehavior
+    public class DefaultQuack : QuackBehavior
     {
-        public void quack()
+        public void Quack()
         {
             Console.WriteLine("Quack");
         }
@@ -121,7 +121,7 @@
 
     public class MuteQuack : QuackBehavior
     {
-        public void quack()
+        public void Quack()
         {
             Console.WriteLine("<< Silence >>");
         }
@@ -129,7 +129,7 @@
 
     public class Squeak : QuackBehavior
     {
-        public void quack()
+        public void Quack()
         {
             Console.WriteLine("Squeak");
         }
@@ -141,13 +141,13 @@
         static void Main(string[] args)
         {
             Duck mallard = new MallardDuck();
-            mallard.performQuack();
-            mallard.performFly();
+            mallard.PerformQuack();
+            mallard.PerformFly();
 
             Duck model = new ModelDuck();
-            model.performFly();
-            model.setFlyBehavior(new FlyRocketPowered());
-            model.performFly();
+            model.PerformFly();
+            model.SetFlyBehavior(new FlyRocketPowered());
+            model.PerformFly();
 
         }
     }
