@@ -2,7 +2,7 @@
 
 ## Observer Pattern
 Defines a one-to-many dependency between objects so that when one object changes 
-state, all of its dependents are notified and updatd automatically. (p 51)
+state, all of its dependents are notified and updated automatically. (p 51)
 
 ## Design Principle:
 * Strvie for losely coupled designs between objects that interact (p 54)
