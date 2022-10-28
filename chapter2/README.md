@@ -8,7 +8,7 @@ state, all of its dependents are notified and updated automatically. (p 51)
 * Strvie for losely coupled designs between objects that interact (p 54)
 
 ## Program Output:
-```C#
+```
 Current conditions: 80F degrees & 65% humidity
 Heat index: 82.95535
 Current conditions: 82F degrees & 70% humidity
