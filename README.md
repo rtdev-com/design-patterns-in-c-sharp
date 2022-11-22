@@ -4,11 +4,12 @@ Head First Design Patterns in C#
 ## Patterns:
 1. [Strategy Pattern](/chapter1/)
 1. [Observer Pattern](/chapter2/)
+1. [Decorator Pattern](/chapter3/)
 
 ## How to run:
 ```
 cd chapter1
-dotnet new console framework net6.0`
+dotnet new console framework net6.0
 dotnet build
 dotnet run
 ```
