@@ -10,7 +10,7 @@ Let's the algorithm vary independently from clients that use it. (p 24)
 * Favor composition over inheritance (p 23)
 
 ## Program Output:
-```C#
+```
 Quack
 I'm flying!!
 I can't fly
