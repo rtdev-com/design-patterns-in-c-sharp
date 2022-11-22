@@ -1,4 +1,4 @@
-﻿    namespace TestingTheWeatherStationCode
+﻿namespace TestingTheWeatherStationCode
 {
     /**** STEP 1: Implement Weather Station Interfaces ****/
     public interface ISubject
