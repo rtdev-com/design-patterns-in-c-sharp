@@ -1,7 +1,7 @@
 # design-patterns-in-c-sharp
 Head First Design Patterns in C#
 
-![Book Cover](/book_cover.webp)
+[![Book Cover](/book_cover.webp)](https://amzn.to/3tQ1ZLK)
 
 You can purchase this book here: [Amazon link](https://amzn.to/3tQ1ZLK)
 
