@@ -16,3 +16,5 @@ I'm flying!!
 I can't fly
 I'm flying with a rocket!
 ```
+
+[Awesome YouTube Video Covering Strategy Pattern](https://rtaylor.co/strategypattern)
