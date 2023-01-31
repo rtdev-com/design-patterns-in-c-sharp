@@ -9,6 +9,7 @@ You can purchase this book here: [Amazon link](https://amzn.to/3tQ1ZLK)
 1. [Strategy Pattern](/chapter1/)
 1. [Observer Pattern](/chapter2/)
 1. [Decorator Pattern](/chapter3/)
+1. [Factory Pattern](/chapter4/)
 
 ## How to run:
 ```
