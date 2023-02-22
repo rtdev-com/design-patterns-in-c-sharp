@@ -1,7 +1,7 @@
 # Chapter 4
 
 ## Simple Factory Idiom
-* Not quite a Factory Pattern, but a good warm up
+* Not quite a Factory Pattern, but a good warm up (p 117)
 
 ## Program Output:
 ```
