@@ -14,7 +14,7 @@ You can purchase this book here: [Amazon link](https://amzn.to/3tQ1ZLK)
 ## How to run:
 ```
 cd chapter1
-dotnet new console framework net6.0
+dotnet new console
 dotnet build
 dotnet run
 ```
