@@ -12,6 +12,7 @@ You can purchase this book here: [Amazon link](https://amzn.to/3tQ1ZLK)
 1. [Factory Pattern](/chapter4/)
 1. [Singleton Pattern](/chapter5/)
 1. [Command Pattern](/chapter6/)
+1. [Decorator and Adapter Patterns](/chapter7/)
 
 ## How to run:
 ```
