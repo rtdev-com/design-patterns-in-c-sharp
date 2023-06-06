@@ -1,9 +1,9 @@
 # Chapter 4
 Chapter 4 contains two types of factory patterns and one programming idiom called Simple Factory.
 
-* [Simple Factory Idiom](/SimpleFactory/)
-* [Factory Pattern](/Factory/)
-* [Abstract Factory Patten](/AbstractFactory/)
+* [Simple Factory Idiom](SimpleFactory/)
+* [Factory Pattern](Factory/)
+* [Abstract Factory Patten](AbstractFactory/)
 
 ## Design Principles:
 * Depend on abstractions. Do not depend upon concrete classes (p 139)
