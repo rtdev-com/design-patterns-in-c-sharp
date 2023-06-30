@@ -3,7 +3,7 @@ Chapter 4 contains two types of factory patterns and one programming idiom calle
 
 * [Simple Factory Idiom](Factory/)
 * [Factory Pattern](Factory/)
-* [Abstract Factory Patten](AbstractFactory/)
+* [Abstract Factory Pattern](AbstractFactory/)
 
 ## Design Principles:
 * Depend on abstractions. Do not depend upon concrete classes (p 139)
