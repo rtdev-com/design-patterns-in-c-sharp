@@ -1,7 +1,7 @@
 # Chapter 7
-For Adapter Factory Pattern, start reading on page 237
+For the Adapter Pattern, start reading on page 237
 
-## Abstract Factory Pattern
+## Adapter Pattern
 * Converts the interface of a class into another interface the client expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces. (p 245)
 
 ## Program Output:
