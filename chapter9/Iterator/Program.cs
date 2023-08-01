@@ -166,6 +166,7 @@ namespace TestingIterator
             return new DinerMenuIterator(_menuItems);
         }
     }
+
     /**** STEP 3 - Define Waitress ****/
     public class Waitress
     {
@@ -257,7 +258,6 @@ namespace TestingIterator
             return false;
         }
     }
-
 
     /**** STEP 4 - Test ****/
     class Program
