@@ -16,6 +16,7 @@ You can purchase this book here: [Amazon link](https://amzn.to/3tQ1ZLK)
 1. [Template Method Pattern](/chapter8/)
 1. [Iterator and Composite Pattern](/chapter9/)
 1. [Strategy Pattern](/chapter10/)
+1. [Proxy Pattern](/chapter11/)
 
 ## How to run:
 ```
